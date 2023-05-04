@@ -1,4 +1,4 @@
-function App() {
+function HeroesApp() {
 
   return (
     <>
@@ -8,4 +8,4 @@ function App() {
   )
 }
 
-export default App
+export default HeroesApp
