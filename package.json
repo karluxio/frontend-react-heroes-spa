@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://karluxio.github.io/frontend-react-heroes-spa/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
