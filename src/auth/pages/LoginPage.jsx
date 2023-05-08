@@ -12,7 +12,7 @@ export const LoginPage = () => {
   const onLogin = () => {
     login("Luciano Figueroa")
 
-    const lastPath = localStorage.getItem("lastPath") || "/"
+    const lastPath = localStorage.getItem("lastPath") || "https://karluxio.github.io/frontend-react-heroes-spa/"
 
     navigate(lastPath, { replace: true })
   }
