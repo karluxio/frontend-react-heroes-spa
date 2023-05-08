@@ -25,7 +25,7 @@ export const SearchPage = () => {
   const onSubmit = (e) => {
     e.preventDefault()
 
-    navigate(`https://karluxio.github.io/frontend-react-heroes-spa/search?q=${searchText}`)
+    navigate(`/search?q=${searchText}`)
   }
 
   return (

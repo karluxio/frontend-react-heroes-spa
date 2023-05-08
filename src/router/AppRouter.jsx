@@ -13,13 +13,13 @@ export const AppRouter = () => {
 
       <Routes>
 
-        <Route path="https://karluxio.github.io/frontend-react-heroes-spa/login" element={
+        <Route path="/login" element={
           <PublicRoute>
             <LoginPage />
           </PublicRoute>
         } />
 
-        <Route path="https://karluxio.github.io/frontend-react-heroes-spa/*" element={
+        <Route path="/*" element={
           <PrivateRoute>
             <HeroesRoutes />
           </PrivateRoute>

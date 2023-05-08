@@ -14,7 +14,7 @@ export const HeroCard = ({
   characters,
 }) => {
 
-  const imageUrl = `https://karluxio.github.io/frontend-react-heroes-spa/heroes/${id}.jpg`
+  const imageUrl = `/heroes/${id}.jpg`
 
   return (
     <div className="col">

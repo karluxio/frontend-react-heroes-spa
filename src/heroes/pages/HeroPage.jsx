@@ -9,7 +9,7 @@ export const HeroPage = () => {
 
   const hero = useMemo(() => getHeroById(id), [id])
 
-  const imgUrl = `https://karluxio.github.io/frontend-react-heroes-spa/heroes/${id}.jpg`
+  const imgUrl = `/heroes/${id}.jpg`
 
   const navigate = useNavigate()
   const onNavigateBack = () => {
@@ -17,7 +17,7 @@ export const HeroPage = () => {
   }
 
   if (!hero) {
-    return <Navigate to="https://karluxio.github.io/frontend-react-heroes-spa/marvel" />
+    return <Navigate to="/marvel" />
   }
 
   return (
