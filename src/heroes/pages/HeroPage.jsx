@@ -9,7 +9,7 @@ export const HeroPage = () => {
 
   const hero = useMemo(() => getHeroById(id), [id])
 
-  const imgUrl = `/heroes/${id}.jpg`
+  const imgUrl = `/frontend-react-heroes-spa/heroes/${id}.jpg`
 
   const navigate = useNavigate()
   const onNavigateBack = () => {
