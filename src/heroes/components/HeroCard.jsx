@@ -14,7 +14,7 @@ export const HeroCard = ({
   characters,
 }) => {
 
-  const imageUrl = `/frontend-react-heroes-spa/heroes/${id}.jpg`
+  const imageUrl = `/heroes/${id}.jpg`
 
   return (
     <div className="col">
@@ -35,7 +35,7 @@ export const HeroCard = ({
                 <small className="text-muted">{first_appearance}</small>
               </p>
 
-              <Link to={`https://karluxio.github.io/frontend-react-heroes-spa/hero/${id}`}>
+              <Link to={`/hero/${id}`}>
                 Más...
               </Link>
             </div>
