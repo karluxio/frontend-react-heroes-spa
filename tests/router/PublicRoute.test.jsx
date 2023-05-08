@@ -1,12 +1,7 @@
 import { render, screen } from '@testing-library/react'
-import { PublicRoute } from './src/router/PublicRoute'
-import { renderHook } from '@testing-library/react'
-import { useContext } from 'react'
-import { AuthContext } from './src/auth'
-import { MemoryRouter } from 'react-router-dom'
-import { useLocation } from 'react-router-dom'
-import { Routes } from 'react-router-dom'
-import { Route } from 'react-router-dom'
+import { PublicRoute } from '../../src/router/PublicRoute'
+import { AuthContext } from '../../src/auth'
+import { Routes, Route, MemoryRouter } from 'react-router-dom'
 
 describe('PublicRoute', () => {
   it("should render children if not logged", () => {
