@@ -29,7 +29,7 @@ export const SearchPage = () => {
   }
 
   return (
-    <>
+    <div className='animate__animated animate__fadeIn'>
       <h1>Search</h1>
       <hr />
 
@@ -77,6 +77,6 @@ export const SearchPage = () => {
 
         </div>
       </div>
-    </>
+    </div>
   )
 }
