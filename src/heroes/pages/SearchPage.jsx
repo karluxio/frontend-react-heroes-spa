@@ -8,7 +8,6 @@ import { getHeroesByName } from '../helpers'
 
 export const SearchPage = () => {
 
-
   const navigate = useNavigate()
   const location = useLocation()
 
@@ -37,7 +36,7 @@ export const SearchPage = () => {
         <div className="col-5">
           <h4>Searching...</h4>
           <hr />
-          <form onSubmit={onSubmit}>
+          <form onSubmit={onSubmit} aria-label='form'>
             <input
               className="form-control"
               type="text"
@@ -61,11 +60,11 @@ export const SearchPage = () => {
               : heroes.length === 0 && <div className="alert alert-danger">No hero with <b>{q}</b></div>
           } */}
 
-          <div className="alert alert-primary animate__animated animate__fadeIn" style={{ display: showSearch ? '' : 'none' }}>
+          <div aria-label='search-alert' className="alert alert-primary animate__animated animate__fadeIn" style={{ display: showSearch ? '' : 'none' }}>
             Search a hero
           </div>
 
-          <div className="alert alert-danger animate__animated animate__fadeIn" style={{ display: showError ? "" : 'none' }}>
+          <div aria-label='error-alert' className="alert alert-danger animate__animated animate__fadeIn" style={{ display: showError ? "" : 'none' }}>
             No hero with <b>{q}</b>
           </div>
 
