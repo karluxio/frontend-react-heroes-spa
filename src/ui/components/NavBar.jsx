@@ -12,7 +12,7 @@ export const Navbar = () => {
   const onLogout = () => {
     logout()
 
-    navigate("/login", {
+    navigate("https://karluxio.github.io/frontend-react-heroes-spa/login", {
       replace: true
     })
 

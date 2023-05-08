@@ -16,5 +16,5 @@ export const PrivateRoute = ({ children }) => {
 
   return (logged)
     ? children
-    : <Navigate to="/login" />
+    : <Navigate to="https://karluxio.github.io/frontend-react-heroes-spa/login" />
 }

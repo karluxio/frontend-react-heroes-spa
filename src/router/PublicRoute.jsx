@@ -7,6 +7,6 @@ export const PublicRoute = ({ children }) => {
   const { logged } = useContext(AuthContext)
 
   return (logged)
-    ? <Navigate to="/" />
+    ? <Navigate to="https://karluxio.github.io/frontend-react-heroes-spa/" />
     : children
 }
